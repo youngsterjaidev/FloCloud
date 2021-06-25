@@ -1,5 +1,5 @@
 //Button
-const smButton = document.createElement('template')
+let smButton = document.createElement('template')
 smButton.innerHTML = `
 <style>     
 *{
@@ -3399,6 +3399,7 @@ smTabPanels.innerHTML = `
     display: flex;
     width: 100%;
     height: 100%;
+    flex-direction: column;
     overflow: hidden auto;
 }
 slot::slotted(.hide-completely){
